@@ -3,5 +3,10 @@
  - name: Configure PHP 
    become: true
    hosts: all
+   vars_files:
+    - vars/php-fpm-nginx.yml
    roles: 
+    - geerlingguy.repo-remi
+    when: ansible_os_family == 'RedHat'
+    - geerlingguy.php-versions
     - geerlingguy.php

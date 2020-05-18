@@ -1,4 +1,7 @@
 ---
 roles:
   # install php from Galaxy
-  - name: geerlingguy.pp
+  - name: geerlingguy.php-versions
+  - name: geerlingguy.php
+  - name: geerlingguy.repo-remi
+  - name: geerlingguy.repo-epel
