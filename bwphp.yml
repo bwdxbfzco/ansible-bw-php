@@ -6,7 +6,7 @@
    vars_files:
     - vars/php-fpm-nginx.yml
    roles: 
-    - geerlingguy.repo-remi
+    - role: geerlingguy.repo-remi
       when: ansible_os_family == 'RedHat'
     - geerlingguy.php-versions
     - geerlingguy.php
