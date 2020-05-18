@@ -1,0 +1,4 @@
+---
+roles:
+  # install php from Galaxy
+  - name: geerlingguy.pp

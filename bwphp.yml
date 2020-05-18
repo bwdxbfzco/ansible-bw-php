@@ -1,0 +1,7 @@
+---
+# tasks file for PHP server installation
+ - name: Configure PHP 
+   become: true
+   hosts: all
+   roles: 
+    - geerlingguy.php
